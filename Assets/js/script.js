@@ -68,15 +68,17 @@ const upperCaseArray = upperCase.split("");
 // const arrayArray = [[lowerCaseArray], [upperCaseArray], [specialArray], [numArray]];
 
 const getCriteria = function () {
-  const x = prompt("Choose Password length", "0");
+  const x = prompt("Choose Password length");
   const passwordLength = parseInt(x, 10);
   if (Number.isNaN(passwordLength)) {
     alert("Please enter a valid numerical value");
+    return;
   }
   // if input is between the lengths of 8-128
 
   if (passwordLength > 128 || passwordLength < 8) {
     alert("Password must be between 8-128 characters");
+    return;
   }
   const lowerCase = confirm("Would you like to use lowercase characters?");
   const upperCase = confirm("Would you like to use uppercase characters?");
@@ -98,22 +100,37 @@ const getCriteria = function () {
 //
 const generatePassword = function () {
   const attributes = getCriteria();
-  const emptyArray = [];
+  const containerArray = [];
+  if (!attributes) {
+    return;
+  }
   if (attributes.lowerCase === true) {
-    emptyArray.push(...lowerCaseArray);
+    containerArray.push(...lowerCaseArray);
   }
   if (attributes.upperCase === true) {
-    emptyArray.push(...upperCaseArray);
+    containerArray.push(...upperCaseArray);
   }
   if (attributes.specialChar === true) {
-    emptyArray.push(...specialArray);
+    containerArray.push(...specialArray);
   }
   if (attributes.numChar === true) {
-    emptyArray.push(...numArray);
+    containerArray.push(...numArray);
   }
-  console.log(emptyArray);
+  if (!containerArray.length) {
+    alert("You need to choose at least one type of character");
+    return;
+  }
+
+  const passwordArray = [];
+
+  for (let i = 0; i < attributes.passwordLength; i++) {
+    const randomIndex = Math.floor(Math.random() * containerArray.length);
+    const randomChar = containerArray[randomIndex];
+    passwordArray.push(randomChar);
+  }
+  const password = passwordArray.join("");
+  return password;
 };
-generatePassword();
 
 // need to ask for input to define the passwords length. (prompt)
 // need to check if that input is valid (between 8 -128 characters long) if else: error message
@@ -129,17 +146,3 @@ function writePassword() {
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-// // if getCriteria = function () {
-//   const pwLength = Number(prompt("Choose Password length"));
-//   if (isNaN(pwLength)) {
-//     return "Not a valid number!";
-//     if else (pwLength <= 8 && >= 128) {
-//     return "Password must be between 8 - 128 characters long"
-//     }
-//     else {
-//     return "you have chosen"
-//       + pwLength;  }
-//   }
-// } {
-// console.log(getCriteria);
