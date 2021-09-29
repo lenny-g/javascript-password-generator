@@ -126,11 +126,6 @@ const generatePassword = function () {
   return password;
 };
 
-// need to ask for input to define the passwords length. (prompt)
-// need to check if that input is valid (between 8 -128 characters long) if else: error message
-// go through a series of checks (input required) prompt do you want uppercase/lowercase/special/numerical (Y/N)
-// then get those requested arrays in a random password at their desired length. maths(floor).random
-
 // // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
