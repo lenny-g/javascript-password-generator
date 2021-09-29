@@ -70,7 +70,7 @@ const upperCaseArray = upperCase.split("");
 const getCriteria = function () {
   // prompt for user to decide the length of their password
   const x = prompt("Choose Password length");
-  // convert the input from a string into an int.
+  // convert the input from a string into an int
   const passwordLength = parseInt(x, 10);
   // if the string can not be converted into an int (this creates an error message)
   if (Number.isNaN(passwordLength)) {
