@@ -86,7 +86,7 @@ const getCriteria = function () {
   const lowerCase = confirm("Would you like to use lowercase characters?");
   const upperCase = confirm("Would you like to use uppercase characters?");
   const specialChar = confirm("Would you like to use special characters?");
-  const numChar = confirm("Would you like to use a number?");
+  const numChar = confirm("Would you like to use numbers?");
   // value and key properties of each attribute
   const attributes = {
     passwordLength: passwordLength,
