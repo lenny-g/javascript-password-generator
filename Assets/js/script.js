@@ -92,7 +92,28 @@ const getCriteria = function () {
   return attributes;
 };
 
-console.log(getCriteria());
+// console.log(getCriteria()); - get rid of this!
+
+// Check the selectors
+//
+const generatePassword = function () {
+  const attributes = getCriteria();
+  const emptyArray = [];
+  if (attributes.lowerCase === true) {
+    emptyArray.push(...lowerCaseArray);
+  }
+  if (attributes.upperCase === true) {
+    emptyArray.push(...upperCaseArray);
+  }
+  if (attributes.specialChar === true) {
+    emptyArray.push(...specialArray);
+  }
+  if (attributes.numChar === true) {
+    emptyArray.push(...numArray);
+  }
+  console.log(emptyArray);
+};
+generatePassword();
 
 // need to ask for input to define the passwords length. (prompt)
 // need to check if that input is valid (between 8 -128 characters long) if else: error message
@@ -100,15 +121,14 @@ console.log(getCriteria());
 // then get those requested arrays in a random password at their desired length. maths(floor).random
 
 // // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-//   passwordText.value = password;
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+  passwordText.value = password;
+}
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 // // if getCriteria = function () {
 //   const pwLength = Number(prompt("Choose Password length"));
