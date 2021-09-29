@@ -78,7 +78,6 @@ const getCriteria = function () {
     return;
   }
   // if the length is not between 8 and 128 characters (this creates an error message)
-
   if (passwordLength > 128 || passwordLength < 8) {
     alert("Password must be between 8-128 characters");
     return;
