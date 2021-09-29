@@ -65,8 +65,6 @@ const lowerCaseArray = [
 const upperCase = lowerCaseArray.join("").toUpperCase();
 const upperCaseArray = upperCase.split("");
 
-// const arrayArray = [[lowerCaseArray], [upperCaseArray], [specialArray], [numArray]];
-
 const getCriteria = function () {
   const x = prompt("Choose Password length");
   const passwordLength = parseInt(x, 10);
@@ -94,10 +92,6 @@ const getCriteria = function () {
   return attributes;
 };
 
-// console.log(getCriteria()); - get rid of this!
-
-// Check the selectors
-//
 const generatePassword = function () {
   const attributes = getCriteria();
   const containerArray = [];
