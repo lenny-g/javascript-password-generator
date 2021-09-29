@@ -65,65 +65,34 @@ const lowerCaseArray = [
 const upperCase = lowerCaseArray.join("").toUpperCase();
 const upperCaseArray = upperCase.split("");
 
-arrayArray = [[lowerCaseArray], [upperCaseArray], [specialArray], [numArray]];
+// const arrayArray = [[lowerCaseArray], [upperCaseArray], [specialArray], [numArray]];
 
 const getCriteria = function () {
   const x = prompt("Choose Password length", "0");
-  if (x === Number) {
-    console.log(isValid());
-  } else {
-    console.log("Please enter a valid numerical value");
+  const passwordLength = parseInt(x, 10);
+  if (Number.isNaN(passwordLength)) {
+    alert("Please enter a valid numerical value");
   }
+  // if input is between the lengths of 8-128
 
-  const isValid = function () {
-    const valid = pwLength;
-    if ((valid) => 8) {
-      console.log("poo");
-    } else {
-      console.log("Pee ");
-    }
+  if (passwordLength > 128 || passwordLength < 8) {
+    alert("Password must be between 8-128 characters");
+  }
+  const lowerCase = confirm("Would you like to use lowercase characters?");
+  const upperCase = confirm("Would you like to use uppercase characters?");
+  const specialChar = confirm("Would you like to use special characters?");
+  const numChar = confirm("Would you like to use a number?");
+  const attributes = {
+    passwordLength: passwordLength,
+    lowerCase: lowerCase,
+    upperCase: upperCase,
+    specialChar: specialChar,
+    numChar: numChar,
   };
+  return attributes;
 };
 
 console.log(getCriteria());
-
-const getLowerCase = function () {
-  const lowerCase = confirm("Would you like to use lowercase characters?");
-  if (lowerCase === true) {
-    console.log("YES");
-  } else {
-    console.log("NO");
-  }
-};
-
-console.log(getLowerCase());
-
-const getUpperCase = function () {
-  const upperCase = confirm("Would you like to use uppercase characters?");
-  if (upperCase === true) {
-    console.log("YES");
-  } else {
-    console.log("NO");
-  }
-};
-
-const getSpecial = function () {
-  const specialChar = confirm("Would you like to use special characters?");
-  if (specialChar === true) {
-    console.log("YES");
-  } else {
-    console.log("NO");
-  }
-};
-
-const getNum = function () {
-  const numChar = confirm("Would you like to use a number?");
-  if (numChar === true) {
-    console.log("YES");
-  } else {
-    console.log("NO");
-  }
-};
 
 // need to ask for input to define the passwords length. (prompt)
 // need to check if that input is valid (between 8 -128 characters long) if else: error message
