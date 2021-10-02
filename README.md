@@ -1,15 +1,15 @@
-## JAVASCRIPT PASSWORD GENERATOR (COMPLETE)
+# JAVASCRIPT PASSWORD GENERATOR (COMPLETE)
 
-# PROJECT DESCRIPTION
+## PROJECT DESCRIPTION
 
 Objective was to create a password generator that generated a random string
 from user selected arrays.
 
-# LINK TO WORKING WEBPAGE
+## LINK TO WORKING WEBPAGE
 
 Click [here](https://lenny-g.github.io/javascript-password-generator/) for finished webpage.
 
-# SCREENSHOTS
+## SCREENSHOTS
 
 This screenshot shows the user input their desired password length:
 
@@ -42,7 +42,7 @@ This screenshot shows an error message when using a length not within the perime
 This screenshot shows an error message when none of the character selectors are chosen:
 ![ScreenShot](./assets/images/errornochoice.png)
 
-# WORK ACHIEVED
+## WORK ACHIEVED
 
 - Created a javascript page that is responsive
 - Created an input for users to enter a desired password length
