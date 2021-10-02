@@ -11,21 +11,39 @@ Click [here](https://lenny-g.github.io/javascript-password-generator/) for finis
 
 # SCREENSHOTS
 
-This screenshot shows the user input their desired password length
+This screenshot shows the user input their desired password length:
+
 ![ScreenShot](./assets/images/passwordlength.png)
-This screenshot shows the option to select lowercase characters
+
+This screenshot shows the option to select lowercase characters:
+
 ![ScreenShot](./assets/images/lowercaseselect.png)
-This screenshot shows the option to select uppercase characters
+
+This screenshot shows the option to select uppercase characters:
+
 ![ScreenShot](./assets/images/uppercaseselect.png)
-This screenshot shows the option to select special characters
+
+This screenshot shows the option to select special characters:
+
 ![ScreenShot](./assets/images/specialselect.png)
-This screenshot shows the option to select numerical characters
+
+This screenshot shows the option to select numerical characters:
+
 ![ScreenShot](./assets/images/numberselect.png)
-This screenshot shows a generated password using all of the character choices
+This screenshot shows a generated password using all of the character choices:
+
 ![ScreenShot](./assets/images/generatedpassword.png)
-This screenshot shows an error message when using a length not within the perimeter of 8-128 characters
+
+This screenshot shows an error message when using a length not within the perimeter of 8-128 characters:
+
 ![ScreenShot](./assets/images/errorpasswordlength.png)
-This screenshot shows an error message when none of the character selectors are chosen
+
+This screenshot shows an error message when none of the character selectors are chosen:
 ![ScreenShot](./assets/images/errornochoice.png)
 
-#
+# WORK ACHIEVED
+
+- Created a javascript page that is responsive
+- Created an input for users to enter a desired password length
+- Created a choice for various characters to be used in generated password
+- Created error messages when user inputs incorrect information.
