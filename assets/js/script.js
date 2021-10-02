@@ -107,16 +107,16 @@ const generatePassword = function () {
     return;
   }
   // if selected the attribute is added to the array
-  if (attributes.lowerCase === true) {
+  if (attributes.lowerCase) {
     containerArray.push(...lowerCaseArray);
   }
-  if (attributes.upperCase === true) {
+  if (attributes.upperCase) {
     containerArray.push(...upperCaseArray);
   }
-  if (attributes.specialChar === true) {
+  if (attributes.specialChar) {
     containerArray.push(...specialArray);
   }
-  if (attributes.numChar === true) {
+  if (attributes.numChar) {
     containerArray.push(...numArray);
   }
   // if the user has pick none of the above arrays there is an error message

@@ -30,6 +30,7 @@ This screenshot shows the option to select special characters:
 This screenshot shows the option to select numerical characters:
 
 ![ScreenShot](./assets/images/numberselect.png)
+
 This screenshot shows a generated password using all of the character choices:
 
 ![ScreenShot](./assets/images/generatedpassword.png)
