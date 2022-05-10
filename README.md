@@ -1,13 +1,15 @@
-# JAVASCRIPT PASSWORD GENERATOR ![MIT](https://img.shields.io/static/v1?label=MIT&message=License&color=green)
+# JAVASCRIPT PASSWORD GENERATOR [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## PROJECT DESCRIPTION
+## TABLE OF CONTENTS 
+- [Description](#DESCRIPTION)
+- [Screenshots](#SCREENSHOTS)
+- [Links](#LINKS)
+- [Contact](#CONTACT)
+
+## DESCRIPTION
 
 Objective was to create a password generator that generated a random string
 from user selected arrays.
-
-## LINK TO WORKING WEBPAGE
-
-Click [here](https://lenny-g.github.io/javascript-password-generator/) for finished webpage.
 
 ## SCREENSHOTS
 
@@ -42,9 +44,11 @@ This screenshot shows an error message when using a length not within the perime
 This screenshot shows an error message when none of the character selectors are chosen:
 ![ScreenShot](./assets/images/errornochoice.png)
 
-## WORK ACHIEVED
+## LINKS
 
-- Created a javascript page that is responsive
-- Created an input for users to enter a desired password length
-- Created a choice for various characters to be used in generated password
-- Created error messages when user inputs incorrect information.
+Click [here](https://lenny-g.github.io/javascript-password-generator/) for finished webpage.
+
+## CONTACT
+
+If you would like to contact me regarding this project please reach out to me either on 
+[LinkedIn](https://www.linkedin.com/in/leanne-gallagher/) or [GitHub](https://github.com/lenny-g)
